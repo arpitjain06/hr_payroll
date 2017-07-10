@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hr_payroll *.css
+recursive-include hr_payroll *.csv
+recursive-include hr_payroll *.html
+recursive-include hr_payroll *.ico
+recursive-include hr_payroll *.js
+recursive-include hr_payroll *.json
+recursive-include hr_payroll *.md
+recursive-include hr_payroll *.png
+recursive-include hr_payroll *.py
+recursive-include hr_payroll *.svg
+recursive-include hr_payroll *.txt
+recursive-exclude hr_payroll *.pyc

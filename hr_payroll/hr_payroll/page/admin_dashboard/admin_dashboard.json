@@ -1,0 +1,22 @@
+{
+ "content": null, 
+ "creation": "2017-07-09 23:00:53.097868", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "modified": "2017-07-10 13:10:26.556108", 
+ "modified_by": "Administrator", 
+ "module": "Hr Payroll", 
+ "name": "admin-dashboard", 
+ "owner": "Administrator", 
+ "page_name": "Admin Dashboard", 
+ "roles": [
+  {
+   "role": "All"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "title": "Admin Dashboard"
+}
