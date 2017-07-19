@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="admin_dashboard">
+    <div id="admin-container">
+        <div id="header">
+            <div class="logo">
+                <a><span>Admin</span>Dashboard</a>
+            </div>
+        </div>
+        <div id="admin-sidebar">
+            <ul id="nav">
+                <li id="dashboard">
+                    <a class="selected">
+                        <span><i class="fa fa-dashboard"></i></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                         <span><i class="fa fa-files-o"></i></span>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li id="charts">
+                    <a>
+                        <span><i class="fa fa-pie-chart"></i></span>
+                        <span>Charts</span>
+                    </a>
+                </li>
+                <li id="employee_list">
+                    <a>
+                        <span><i class="fa fa-users"></i></span>
+                        <span>Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span><i class="fa fa-th"></i></span>
+                        <span>Masters</span>
+                        <span class="pull-right-container active_tree">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview active">
+                      <li><a href="/desk#List/Leave Application">
+                        <i class="fa fa-circle-o"></i> Leave Application</a></li>
+                      <li><a href="/desk#List/Employee">
+                        <i class="fa fa-circle-o"></i> Employee</a></li>
+                      <li><a href="/desk#List/Expense Claim">
+                        <i class="fa fa-circle-o"></i> Expense Claim</a></li>
+                      <li><a href="/desk#List/Salary Slip">
+                        <i class="fa fa-circle-o"></i> Salary Slip</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content">
+        <h1>Dashboard
+            <small>Version 2.0</small>
+        </h1>
+
+        <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-cog" aria-hidden="true"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">User</span>
+              <span class="info-box-number">{%= data.user %}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-book" aria-hidden="true"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Expense Claim</span>
+              <span class="info-box-number">{%= data.expense_claim %}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-folder-open" aria-hidden="true"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Leave Application</span>
+              <span class="info-box-number">{%= data.leave_application %}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-users" aria-hidden="true"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Employee</span>
+              <span class="info-box-number">{%= data.employee %}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Monthly Recap Report</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-6" id="splinechart">
+                </div>
+                <div class="col-md-6" id="piechart">
+                </div> 
+              </div>
+            </div>
+      </div>
+    </div>
+</div>
+
