@@ -26,6 +26,8 @@ frappe.AdminDashboard = Class.extend({
 	},
 
 	render_charts: function() {
+		$("#piechart").css({"width":"400px","height":"200px"})
+		$("#splinechart").css({"width":"400px","height":"200px"})
 		var chart = c3.generate({
 			bindto: '#piechart',
 			data: {
